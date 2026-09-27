@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.app { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+
+.home-page { text-align: center; padding-top: 3rem; }
+.home-page h1 { margin-bottom: 0.25rem; }
+.subtitle { color: #666; margin-bottom: 1.5rem; }
+
+.address-form { display: flex; gap: 0.5rem; justify-content: center; }
+.address-form input {
+  width: 360px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.address-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #1565c0;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.address-form button:disabled { background: #90a4ae; cursor: default; }
+
+.progress-stream { list-style: none; padding: 0; margin-top: 1.5rem; text-align: left; max-width: 400px; margin-inline: auto; }
+.progress-stream li { padding: 0.3rem 0; color: #888; }
+.progress-stream li.current { color: #1a1a1a; font-weight: 600; }
+
+.banner { padding: 0.75rem 1rem; border-radius: 6px; margin: 1rem 0; }
+.banner-error { background: #ffebee; color: #c62828; }
+.banner-warning { background: #fff3e0; color: #e65100; }
+
+.report-header { display: flex; justify-content: space-between; align-items: center; }
+
+.hazard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.hazard-card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; background: white; }
+.hazard-card-header { display: flex; justify-content: space-between; align-items: center; }
+.hazard-card-header h3 { margin: 0; font-size: 1rem; }
+.level-badge { color: white; font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
+.hazard-card-meta { color: #666; font-size: 0.85rem; margin-top: 0.4rem; }
+.hazard-card-evidence { color: #888; font-size: 0.75rem; margin-top: 0.4rem; }
+
+.map-view { margin: 1.5rem 0; }
+.hazard-layer-toggle { display: flex; gap: 1rem; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.map-canvas { width: 100%; height: 400px; border-radius: 8px; }
+
+.data-gaps { background: #fff8e1; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }
+.data-gaps h3 { margin-top: 0; }
+
+.report-markdown { line-height: 1.5; }
+
+.loading { text-align: center; padding: 3rem; color: #888; }

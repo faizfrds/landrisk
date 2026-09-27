@@ -1,0 +1,8 @@
+# Local dev convenience only -- not a deployment config. Runs Redis for the
+# report cache. BigQuery, Earth Engine, TypeSafe, and Gemini always hit real
+# cloud services; there is no local emulator for them here.
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"

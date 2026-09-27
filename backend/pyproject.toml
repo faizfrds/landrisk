@@ -1,0 +1,55 @@
+[project]
+name = "parcel-risk-report"
+version = "0.1.0"
+description = "Parcel Risk Report backend -- offline hazard feature jobs + online report API"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sse-starlette>=2.1",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.4",
+    "httpx>=0.27",
+    "redis>=5.0",
+    "google-cloud-bigquery>=3.25",
+    "db-dtypes>=1.2",
+    "earthengine-api>=1.0",
+    "earthaccess>=0.11",
+    "rasterio>=1.3",
+    "rioxarray>=0.15",
+    "shapely>=2.0",
+    "geopandas>=1.0",
+    "pandas>=2.2",
+    "h3>=4.1",
+    "numpy>=1.26",
+    "scikit-learn>=1.5",
+    "joblib>=1.4",
+    "typesafe-sdk>=0.7.2",
+    "google-genai>=0.3",
+    "markdown>=3.6",
+    "jinja2>=3.1",
+    "weasyprint>=62.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "pytest-asyncio>=0.23",
+    "fakeredis>=2.23",
+]
+
+[project.scripts]
+create-bq-tables = "app.datastore.schema.create_tables:main"
+seed-bigquery = "scripts.seed_bigquery:main"
+smoke-test = "scripts.smoke_test:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*", "scripts*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

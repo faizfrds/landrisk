@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+
+# Data (large/manual downloads, not committed)
+backend/data/reference/mtbs/*
+backend/data/reference/travis_parcels/*
+backend/data/models/*.joblib
+!backend/data/reference/mtbs/.gitkeep
+!backend/data/reference/travis_parcels/.gitkeep
+!backend/data/models/.gitkeep
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/

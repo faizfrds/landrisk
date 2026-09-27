@@ -1,0 +1,13 @@
+[
+  {
+    "parcel_id": "test-parcel-austin-1",
+    "county_fips": "48453",
+    "address": "301 Congress Ave, Austin, TX",
+    "geometry": "POLYGON((-97.7431 30.2672, -97.7429 30.2672, -97.7429 30.2670, -97.7431 30.2670, -97.7431 30.2672))",
+    "h3_cells": ["8a44e4a5a49ffff", "8a44e4a5a4dffff"],
+    "buffer_cells": ["8a44e4a5a49ffff", "8a44e4a5a4dffff", "8a44e4a5a41ffff", "8a44e4a5a45ffff"],
+    "source": "travis_county_parcel",
+    "lat": 30.2672,
+    "lon": -97.7431
+  }
+]

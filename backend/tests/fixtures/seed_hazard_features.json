@@ -1,0 +1,82 @@
+[
+  {
+    "h3_cell": "8a44e4a5a49ffff",
+    "hazard": "flood",
+    "data_version": "flood-20260101",
+    "metrics": {"share_of_parcel_flooded": 0.27, "flooded_events": 3},
+    "no_data": false,
+    "evidence_ids": ["E1"]
+  },
+  {
+    "h3_cell": "8a44e4a5a4dffff",
+    "hazard": "flood",
+    "data_version": "flood-20260101",
+    "metrics": {"share_of_parcel_flooded": 0.27, "flooded_events": 3},
+    "no_data": false,
+    "evidence_ids": ["E1"]
+  },
+  {
+    "h3_cell": "8a44e4a5a49ffff",
+    "hazard": "subsidence",
+    "data_version": "subsidence-20260101",
+    "metrics": null,
+    "no_data": true,
+    "evidence_ids": []
+  },
+  {
+    "h3_cell": "8a44e4a5a4dffff",
+    "hazard": "subsidence",
+    "data_version": "subsidence-20260101",
+    "metrics": null,
+    "no_data": true,
+    "evidence_ids": []
+  },
+  {
+    "h3_cell": "8a44e4a5a49ffff",
+    "hazard": "wildfire",
+    "data_version": "wildfire-20260101",
+    "metrics": {"fire_count_5km": 0, "distance_to_nearest_burn_km": 42.0},
+    "no_data": false,
+    "evidence_ids": ["E2"]
+  },
+  {
+    "h3_cell": "8a44e4a5a4dffff",
+    "hazard": "wildfire",
+    "data_version": "wildfire-20260101",
+    "metrics": {"fire_count_5km": 0, "distance_to_nearest_burn_km": 42.0},
+    "no_data": false,
+    "evidence_ids": ["E2"]
+  },
+  {
+    "h3_cell": "8a44e4a5a49ffff",
+    "hazard": "heat",
+    "data_version": "heat-20260101",
+    "metrics": {"mean_lst_c": 38.2, "delta_vs_metro_median_c": 1.4},
+    "no_data": false,
+    "evidence_ids": ["E3"]
+  },
+  {
+    "h3_cell": "8a44e4a5a4dffff",
+    "hazard": "heat",
+    "data_version": "heat-20260101",
+    "metrics": {"mean_lst_c": 38.2, "delta_vs_metro_median_c": 1.4},
+    "no_data": false,
+    "evidence_ids": ["E3"]
+  },
+  {
+    "h3_cell": "8a44e4a5a49ffff",
+    "hazard": "landuse",
+    "data_version": "landuse-20260101",
+    "metrics": {"share_buffer_changed": 0.02, "change_type": "none"},
+    "no_data": false,
+    "evidence_ids": []
+  },
+  {
+    "h3_cell": "8a44e4a5a4dffff",
+    "hazard": "landuse",
+    "data_version": "landuse-20260101",
+    "metrics": {"share_buffer_changed": 0.02, "change_type": "none"},
+    "no_data": false,
+    "evidence_ids": []
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "evidence_id": "E1",
+    "hazard": "flood",
+    "source_product": "Sentinel-1 flood extent",
+    "granule_ids": ["S1A_IW_GRDH_20210506"],
+    "date_start": "2015-01-01",
+    "date_end": "2026-01-01",
+    "method_version": "s1-vv-drop-v1",
+    "values_json": {"flooded_events": 3, "total_events": 11},
+    "license": null
+  },
+  {
+    "evidence_id": "E2",
+    "hazard": "wildfire",
+    "source_product": "NASA_FIRMS_VIIRS_SNPP_NRT",
+    "granule_ids": [],
+    "date_start": "2012-01-01",
+    "date_end": "2026-01-01",
+    "method_version": "firms-viirs-ring-count-v1",
+    "values_json": {"fire_count_5km": 0, "distance_to_nearest_burn_km": 42.0},
+    "license": null
+  },
+  {
+    "evidence_id": "E3",
+    "hazard": "heat",
+    "source_product": "LANDSAT/LC08/C02/T1_L2+LANDSAT/LC09/C02/T1_L2",
+    "granule_ids": [],
+    "date_start": "2025-06-01",
+    "date_end": "2025-08-31",
+    "method_version": "landsat-c2-l2-summer-composite-v1",
+    "values_json": {"mean_lst_c": 38.2, "delta_vs_metro_median_c": 1.4},
+    "license": null
+  }
+]
