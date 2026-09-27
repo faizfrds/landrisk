@@ -37,10 +37,16 @@ export async function postReportStream(
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
-    buffer += decoder.decode(value, { stream: true });
+    // SSE allows CRLF, LF, or CR line endings (sse-starlette emits CRLF);
+    // normalize so frames split on a blank line regardless. A trailing "\r"
+    // is held back in case its "\n" arrives in the next chunk.
+    let text = buffer + decoder.decode(value, { stream: true });
+    const heldCr = text.endsWith("\r") ? "\r" : "";
+    if (heldCr) text = text.slice(0, -1);
+    text = text.replace(/\r\n?/g, "\n");
 
-    const frames = buffer.split("\n\n");
-    buffer = frames.pop() ?? "";
+    const frames = text.split("\n\n");
+    buffer = (frames.pop() ?? "") + heldCr;
 
     for (const frame of frames) {
       const eventLine = frame.split("\n").find((l) => l.startsWith("event:"));
